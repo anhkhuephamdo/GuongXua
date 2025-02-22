@@ -1,44 +1,24 @@
-/* GLOBAL STYLES */
-body {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-    text-align: center;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
 
-/* NAVBAR */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 10px;
-}
+    gsap.to(".hero h1, .hero p, .btn", {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        stagger: 0.3
+    });
 
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    gsap.utils.toArray(".fade-in").forEach((element) => {
+        gsap.fromTo(element,
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 1.5, scrollTrigger: { trigger: element, start: "top 85%", toggleActions: "play none none reverse" } }
+        );
+    });
+});
 
-.hero h1 {
-    font-size: 60px;
-    color: white;
-}
-
-/* INTERACTIVE SAKURA TREE */
-#interactive-tree {
-    width: 150px;
-    height: 200px;
-    background: url('sakura-tree.png') center/cover no-repeat;
-    margin: 20px auto;
-    cursor: pointer;
-}
-
-/* FADE-IN EFFECT */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
+// Interactive Sakura Tree
+function dropPetals() {
+    for (let i = 0; i < 5; i++) {
+        createSakura();
+    }
 }
