@@ -1,101 +1,44 @@
-/* Reset mặc định */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
+/* GLOBAL STYLES */
 body {
-    background-color: #000;
-    color: white;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
     text-align: center;
 }
 
-/* Loader hiệu ứng */
-.loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    z-index: 999;
-}
-
-/* Header */
-header {
-    padding: 50px 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Navbar */
+/* NAVBAR */
 .navbar {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
     position: fixed;
-    width: 100%;
     top: 0;
-    backdrop-filter: blur(5px);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Hero section */
+/* HERO SECTION */
 .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+    align-items: center;
 }
 
-.hero h2 {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    opacity: 0.7;
-    margin-bottom: 20px;
-}
-
-.btn {
-    padding: 10px 20px;
-    background: linear-gradient(45deg, #ffcc00, #ff6600);
+.hero h1 {
+    font-size: 60px;
     color: white;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    transform: scale(1.1);
+/* INTERACTIVE SAKURA TREE */
+#interactive-tree {
+    width: 150px;
+    height: 200px;
+    background: url('sakura-tree.png') center/cover no-repeat;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+/* FADE-IN EFFECT */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
 }
