@@ -22,3 +22,6 @@ function dropPetals() {
         createSakura();
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    new Sakura(document.body);
+});
