@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gương Xưa - Hanoi</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
-    <script src="script.js" defer></script>
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Parallax Background -->
-    <div id="parallax-container"></div>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Trang Chủ</a></li>
-            <li><a href="#about">Giới Thiệu</a></li>
-            <li><a href="#stories">Câu Chuyện</a></li>
-            <li><a href="#shop">Cửa Hàng</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>GƯƠNG XƯA</h1>
-        <p>Nơi truyền thống gặp gỡ sự thanh lịch</p>
-        <a href="#about" class="btn">Khám Phá</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>Giới Thiệu</h2>
-        <p>Gương Xưa là một dự án tôn vinh nét đẹp cổ kính của Hà Nội.</p>
-    </section>
-
-    <!-- Stories Section -->
-    <section id="stories">
-        <h2>Câu Chuyện</h2>
-        <div class="story-container">
-            <div class="story fade-in"><h3>Câu Chuyện 1</h3><p>Nội dung câu chuyện 1...</p></div>
-            <div class="story fade-in"><h3>Câu Chuyện 2</h3><p>Nội dung câu chuyện 2...</p></div>
-            <div class="story fade-in"><h3>Câu Chuyện 3</h3><p>Nội dung câu chuyện 3...</p></div>
-            <div class="story fade-in"><h3>Câu Chuyện 4</h3><p>Nội dung câu chuyện 4...</p></div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><img src="google-icon.png" alt="Google"></a>
+                    <a href="#" class="social"><img src="facebook-icon.png" alt="Facebook"></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button>Sign Up</button>
+            </form>
         </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop">
-        <h2>Cửa Hàng</h2>
-        <div class="shop-container">
-            <div class="product"><img src="product1.jpg" alt="Sản phẩm 1"><p>Sản phẩm 1</p><button>Mua Ngay</button></div>
-            <div class="product"><img src="product2.jpg" alt="Sản phẩm 2"><p>Sản phẩm 2</p><button>Mua Ngay</button></div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><img src="google-icon.png" alt="Google"></a>
+                    <a href="#" class="social"><img src="facebook-icon.png" alt="Facebook"></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
         </div>
-    </section>
-
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To stay connected with us, please login with your personal details</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
