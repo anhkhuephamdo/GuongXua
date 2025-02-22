@@ -1,35 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gương Xưa - Hanoi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="loader">
-        <h1>Loading...</h1>
-    </div>
-    
-    <header>
-        <h1 class="fade-in">Welcome to My Luxury Website</h1>
-    </header>
-    
+
+    <!-- FALLING SAKURA EFFECT -->
+    <div id="sakura-container"></div>
+
+    <!-- NAVIGATION MENU -->
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#stories">Our Stories</a></li>
+            <li><a href="#shop">Our Shop</a></li>
         </ul>
     </nav>
-    
-    <section class="hero">
-        <h2>Experience the Future</h2>
-        <p>Innovative, Stylish, and Elegant</p>
-        <a href="#" class="btn">Explore Now</a>
+
+    <!-- HOME SECTION WITH PARALLAX -->
+    <section id="home" class="hero">
+        <h1 class="fade-in">GƯƠNG XƯA</h1>
+        <p class="fade-in">Where Tradition Meets Elegance</p>
+        <a href="#about" class="btn fade-in">Explore More</a>
     </section>
+
+    <!-- ABOUT US SECTION (Interactive Sakura Tree) -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Gương Xưa là một dự án tôn vinh nét đẹp cổ kính Hà Nội...</p>
+        <div id="interactive-tree" onclick="dropPetals()"></div>
+    </section>
+
+    <!-- OUR STORIES -->
+    <section id="stories">
+        <h2>Our Stories</h2>
+        <div class="story-container">
+            <div class="story fade-in"><h3>Story 1</h3><p>Chuyện 1...</p></div>
+            <div class="story fade-in"><h3>Story 2</h3><p>Chuyện 2...</p></div>
+            <div class="story fade-in"><h3>Story 3</h3><p>Chuyện 3...</p></div>
+            <div class="story fade-in"><h3>Story 4</h3><p>Chuyện 4...</p></div>
+        </div>
+    </section>
+
+    <!-- OUR SHOP -->
+    <section id="shop">
+        <h2>Our Shop</h2>
+        <div class="shop-container">
+            <div class="product fade-in"><img src="product1.jpg"><p>Product 1</p><button>Mua ngay</button></div>
+            <div class="product fade-in"><img src="product2.jpg"><p>Product 2</p><button>Mua ngay</button></div>
+        </div>
+    </section>
+
 </body>
 </html>
