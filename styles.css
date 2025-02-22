@@ -1,44 +1,62 @@
-/* GLOBAL STYLES */
-body {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gương Xưa - Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-/* NAVBAR */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 10px;
-}
+    <!-- Parallax Background -->
+    <div id="parallax-container"></div>
 
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#stories">Câu Chuyện</a></li>
+            <li><a href="#shop">Cửa Hàng</a></li>
+        </ul>
+    </nav>
 
-.hero h1 {
-    font-size: 60px;
-    color: white;
-}
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>GƯƠNG XƯA</h1>
+        <p>Nơi truyền thống gặp gỡ sự thanh lịch</p>
+        <a href="#about" class="btn">Khám Phá</a>
+    </section>
 
-/* INTERACTIVE SAKURA TREE */
-#interactive-tree {
-    width: 150px;
-    height: 200px;
-    background: url('sakura-tree.png') center/cover no-repeat;
-    margin: 20px auto;
-    cursor: pointer;
-}
+    <!-- About Section -->
+    <section id="about">
+        <h2>Giới Thiệu</h2>
+        <p>Gương Xưa là một dự án tôn vinh nét đẹp cổ kính của Hà Nội.</p>
+    </section>
 
-/* FADE-IN EFFECT */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-}
+    <!-- Stories Section -->
+    <section id="stories">
+        <h2>Câu Chuyện</h2>
+        <div class="story-container">
+            <div class="story fade-in"><h3>Câu Chuyện 1</h3><p>Nội dung câu chuyện 1...</p></div>
+            <div class="story fade-in"><h3>Câu Chuyện 2</h3><p>Nội dung câu chuyện 2...</p></div>
+            <div class="story fade-in"><h3>Câu Chuyện 3</h3><p>Nội dung câu chuyện 3...</p></div>
+            <div class="story fade-in"><h3>Câu Chuyện 4</h3><p>Nội dung câu chuyện 4...</p></div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Cửa Hàng</h2>
+        <div class="shop-container">
+            <div class="product"><img src="product1.jpg" alt="Sản phẩm 1"><p>Sản phẩm 1</p><button>Mua Ngay</button></div>
+            <div class="product"><img src="product2.jpg" alt="Sản phẩm 2"><p>Sản phẩm 2</p><button>Mua Ngay</button></div>
+        </div>
+    </section>
+
+</body>
+</html>
