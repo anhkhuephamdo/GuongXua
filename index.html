@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
+<<script src="https://cdnjs.cloudflare.com/ajax/libs/sakura.js/1.0/sakura.min.js"></script>>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gương Xưa - Hanoi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="script.js" defer></script>
-</head>
+</<script src="https://cdnjs.cloudflare.com/ajax/libs/sakura.js/1.0/sakura.min.js"></script>>
 <body>
-
-    <!-- FALLING SAKURA EFFECT -->
+    <!-- Hiệu ứng cánh hoa rơi -->
     <div id="sakura-container"></div>
 
-    <!-- NAVIGATION MENU -->
+    <!-- Thanh điều hướng -->
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#stories">Our Stories</a></li>
-            <li><a href="#shop">Our Shop</a></li>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#stories">Câu Chuyện</a></li>
+            <li><a href="#shop">Cửa Hàng</a></li>
         </ul>
     </nav>
 
-    <!-- HOME SECTION WITH PARALLAX -->
+    <!-- Phần Trang Chủ -->
     <section id="home" class="hero">
-        <h1 class="fade-in">GƯƠNG XƯA</h1>
-        <p class="fade-in">Where Tradition Meets Elegance</p>
-        <a href="#about" class="btn fade-in">Explore More</a>
+        <h1>GƯƠNG XƯA</h1>
+        <p>Nơi truyền thống gặp gỡ sự thanh lịch</p>
+        <a href="#about" class="btn">Khám Phá Thêm</a>
     </section>
 
-    <!-- ABOUT US SECTION (Interactive Sakura Tree) -->
+    <!-- Phần Giới Thiệu -->
     <section id="about">
-        <h2>About Us</h2>
-        <p>Gương Xưa là một dự án tôn vinh nét đẹp cổ kính Hà Nội...</p>
-        <div id="interactive-tree" onclick="dropPetals()"></div>
+        <h2>Giới Thiệu</h2>
+        <p>Gương Xưa là một dự án tôn vinh nét đẹp cổ kính của Hà Nội...</p>
+        <div id="interactive-tree"></div>
     </section>
 
-    <!-- OUR STORIES -->
+    <!-- Phần Câu Chuyện -->
     <section id="stories">
-        <h2>Our Stories</h2>
+        <h2>Câu Chuyện</h2>
         <div class="story-container">
-            <div class="story fade-in"><h3>Story 1</h3><p>Chuyện 1...</p></div>
-            <div class="story fade-in"><h3>Story 2</h3><p>Chuyện 2...</p></div>
-            <div class="story fade-in"><h3>Story 3</h3><p>Chuyện 3...</p></div>
-            <div class="story fade-in"><h3>Story 4</h3><p>Chuyện 4...</p></div>
+            <div class="story"><h3>Câu Chuyện 1</h3><p>Nội dung câu chuyện 1...</p></div>
+            <div class="story"><h3>Câu Chuyện 2</h3><p>Nội dung câu chuyện 2...</p></div>
+            <div class="story"><h3>Câu Chuyện 3</h3><p>Nội dung câu chuyện 3...</p></div>
+            <div class="story"><h3>Câu Chuyện 4</h3><p>Nội dung câu chuyện 4...</p></div>
         </div>
     </section>
 
-    <!-- OUR SHOP -->
+    <!-- Phần Cửa Hàng -->
     <section id="shop">
-        <h2>Our Shop</h2>
+        <h2>Cửa Hàng</h2>
         <div class="shop-container">
-            <div class="product fade-in"><img src="product1.jpg"><p>Product 1</p><button>Mua ngay</button></div>
-            <div class="product fade-in"><img src="product2.jpg"><p>Product 2</p><button>Mua ngay</button></div>
+            <div class="product"><img src="product1.jpg" alt="Sản phẩm 1"><p>Sản phẩm 1</p><button>Mua Ngay</button></div>
+            <div class="product"><img src="product2.jpg" alt="Sản phẩm 2"><p>Sản phẩm 2</p><button>Mua Ngay</button></div>
         </div>
     </section>
-
 </body>
 </html>
